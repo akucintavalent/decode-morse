@@ -14,13 +14,14 @@ This program is used to decode morse code into english messages
 
 👤 **Amadu Kamara (Amkam)**
 
-- Github: @<https://github.com/AmaduKamara>
 
-- LinkedIn: @<https://www.linkedin.com/in/amadu-kamara-3b60a25b/>
+- [GitHub](https://github.com/AmaduKamara)
 
-- Twitter: @<https://twitter.com/DevAmkam/>
+- [LinkedIn](https://www.linkedin.com/in/amadu-kamara-3b60a25b)
 
-- Facebook: @<https://www.facebook.com/amadus.kamara.7/>
+- [Twitter](https://twitter.com/DevAmkam)
+
+- [Twitter](https://www.facebook.com/amadus.kamara.7)
 
 ## 🤝 Contributing
 
