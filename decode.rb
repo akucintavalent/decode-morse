@@ -68,7 +68,7 @@ end
 def decode(str)
   res = ''
   str.split('   ').each do |item|
-    res += ' #{decode_word(item)}'
+    res += " #{decode_word(item)}"
   end
   res.strip
 end
