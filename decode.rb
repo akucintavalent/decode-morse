@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/CyclomaticComplexity
 def decode_char(cha)
   case cha
   when '.-'
