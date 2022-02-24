@@ -57,6 +57,7 @@ def decode_char(cha)
     cha
   end
 end
+# rubocop:disable Metrics/CyclomaticComplexity
 
 def decode_word(str)
   res = ''
