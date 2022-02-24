@@ -1,5 +1,5 @@
-def decode_char(ch)
-  case ch
+def decode_char(char)
+  case char
   when '.-'
     'A'
   when '-...'
@@ -53,7 +53,7 @@ def decode_char(ch)
   when '--..'
     'Z'
   else
-    ch
+    char
   end
 end
 
