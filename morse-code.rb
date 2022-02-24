@@ -1,64 +1,64 @@
 def decode_char(ch)
   case ch
-  when ".-"
-    "A"
-  when "-..."
-    "B"
-  when "-.-."
-    "C"
-  when "-.."
-    "D"
-  when "."
-    "E"
-  when "..-."
-    "F"
-  when "--."
-    "G"
-  when "...."
-    "H"
-  when ".."
-    "I"
-  when ".---"
-    "J"
-  when ".-."
-    "K"
-  when ".-.."
-    "L"
-  when "--"
-    "M"
-  when "-."
-    "N"
-  when "---"
-    "O"
-  when ".--."
-    "P"
-  when "--.-"
-    "Q"
-  when ".-."
-    "R"
-  when "..."
-    "S"
-  when "-"
-    "T"
-  when "..-"
-    "U"
-  when "...-"
-    "V"
-  when ".--"
-    "W"
-  when "-..-"
-    "X"
-  when "-.--"
-    "Y"
-  when "--.."
-    "Z"
+  when '.-'
+    'A'
+  when '-...'
+    'B'
+  when '-.-.'
+    'C'
+  when '-..'
+    'D'
+  when '.'
+    'E'
+  when '..-.'
+    'F'
+  when '--.'
+    'G'
+  when '....'
+    'H'
+  when '..'
+    'I'
+  when '.---'
+    'J'
+  when '.-.'
+    'K'
+  when '.-..'
+    'L'
+  when '--'
+    'M'
+  when '-.'
+    'N'
+  when '---'
+    'O'
+  when '.--.'
+    'P'
+  when '--.-'
+    'Q'
+  when '.-.'
+    'R'
+  when '...'
+    'S'
+  when '-'
+    'T'
+  when '..-'
+    'U'
+  when '...-'
+    'V'
+  when '.--'
+    'W'
+  when '-..-'
+    'X'
+  when '-.--'
+    'Y'
+  when '--..'
+    'Z'
   else
     ch
   end
 end
 
 def decode_word(str)
-  res = ""
+  res = ''
   str.split.each do |item|
     res += decode_char(item)
   end
@@ -66,13 +66,13 @@ def decode_word(str)
 end
 
 def decode(str)
-  res = ""
-  str.split("   ").each do |item|
-    res += " #{decode_word(item)}"
+  res = ''
+  str.split('   ').each do |item|
+    res += ' #{decode_word(item)}'
   end
   res.strip
 end
 
-print decode_word("-- -.--")
-print decode("-- -.--   -. .- -- .")
-print decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
+print decode_word('-- -.--')
+print decode('-- -.--   -. .- -- .')
+print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
