@@ -53,7 +53,7 @@ def decode_char(ch)
   when "--.."
     "Z"
   else
-    nil
+    ch
   end
 end
 
@@ -65,4 +65,14 @@ def decode_word(str)
   res
 end
 
+def decode(str)
+  res = ""
+  str.split("   ").each do |item|
+    res += " #{decode_word(item)}"
+  end
+  res.strip
+end
+
 print decode_word("-- -.--")
+print decode("-- -.--   -. .- -- .")
+print decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
